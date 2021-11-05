@@ -1,0 +1,17 @@
+<section>
+    <mat-card class="card" *ngFor="let alrt of alerts">
+        <mat-card-header color="danger">
+            <mat-card-title >
+                {{alrt.title}}
+            </mat-card-title>
+            <mat-card-subtitle>
+                {{alrt.description}}
+            </mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <p>Period: {{alrt.activeStart}} - {{alrt.activeEnd}}</p>
+            <p>Cause: {{alrt.cause}}</p>
+            <p>Effect: {{alrt.effect}}</p>
+        </mat-card-content>
+    </mat-card>
+</section>

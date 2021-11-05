@@ -1,0 +1,43 @@
+<div class="container">
+    <mat-card class="card">
+        <mat-card-header>
+            <mat-card-title>
+                Alertas
+            </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>Estado de las alertas del subte</mat-card-content>
+        <mat-card-actions>
+            <button mat-flat-button color="accent" (click)="goTo('alerts')">
+                <mat-icon>warning_amber</mat-icon>
+            </button>
+        </mat-card-actions>
+    </mat-card>
+
+    <mat-card class="card">
+        <mat-card-header>
+            <mat-card-title>
+                LLegada
+            </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>Tiempo estimado de llegada</mat-card-content>
+        <mat-card-actions>
+            <button mat-flat-button color="accent" (click)="goTo('arrival')">
+                <mat-icon>train</mat-icon>
+            </button>
+        </mat-card-actions>
+    </mat-card>
+
+    <mat-card class="card">
+        <mat-card-header>
+            <mat-card-title>
+                Historico
+            </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>Historico de alertas por fecha</mat-card-content>
+        <mat-card-actions>
+            <button mat-flat-button color="accent" (click)="goTo('history')">
+                <mat-icon>history</mat-icon>
+            </button>
+        </mat-card-actions>
+    </mat-card>
+</div>
